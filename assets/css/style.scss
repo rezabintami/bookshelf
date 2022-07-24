@@ -1,0 +1,379 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(107, 175, 101);
+    color: white;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.card {
+    background-color: rgb(107, 175, 101);
+    border-radius: 0.25rem;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    min-width: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 100%;
+    width: auto;
+    padding: 15px;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.section-left {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    .input_section {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            .input_inline {
+                margin: 12px 0;
+                display: flex;
+                align-items: center;
+
+                label {
+                    color: #FFFFFF;
+                    font-weight: bold;
+                    margin-right: 10px;
+                }
+
+            }
+
+            .input {
+                margin: 8px 0;
+
+                label {
+                    color: #FFFFFF;
+                    font-weight: bold;
+                }
+
+                input {
+                    display: block;
+                    width: 100%;
+                    padding: 8px;
+                    border-radius: 5px;
+                }
+            }
+
+            button {
+                background-color: rgb(44, 88, 40);
+                color: white;
+                border: 0;
+                border-radius: 5px;
+                display: block;
+                width: 100%;
+                padding: 8px;
+                cursor: pointer;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .search_section {
+        text-align: center;
+
+        h2 {
+            color: #FFFFFF;
+        }
+
+        form {
+            width: 100%;
+            display: grid;
+            grid-gap: 10px;
+
+            label {
+                display: flex;
+                align-items: center;
+            }
+
+            input {
+                padding: 5px;
+                border-radius: 5px;
+            }
+
+            button {
+                background-color: rgb(44, 88, 40);
+                color: white;
+                border: 0;
+                display: block;
+                width: 100%;
+                border-radius: 5px;
+                padding: 8px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .book_list {
+        padding: 16px;
+        text-align: left;
+        
+        .book_item {
+            padding: 8px 16px 16px 16px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 10px 0;
+
+            h3,
+            p {
+                margin: 8px 0;
+            }
+
+            .action {
+                .green {
+                    background-color: darkgreen;
+                    color: white;
+                }
+
+                .red {
+                    background-color: darkred;
+                    color: white;
+                }
+
+                button {
+                    border: 0;
+                    padding: 5px;
+                    margin: 0 5px 0 0;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.section-right {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    border: 1px solid black;
+    padding: 16px;
+    border-radius: 10px;
+
+    h2 {
+        color: white;
+    }
+
+    .book_list {
+        padding: 16px;
+
+        .book_item {
+            padding: 8px 16px 16px 16px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 10px 0;
+
+            h3,
+            p {
+                margin: 8px 0;
+            }
+
+            .action {
+                .green {
+                    background-color: darkgreen;
+                    color: white;
+                }
+
+                .red {
+                    background-color: darkred;
+                    color: white;
+                }
+
+                button {
+                    border: 0;
+                    padding: 5px;
+                    margin: 0 5px 0 0;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+// INI IPAD
+@media (min-width: 769px) {
+    .card {
+        background-color: rgb(107, 175, 101);
+        border-radius: 0.25rem;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        color: white;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        min-width: 0;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+}
+
+// INI PC
+@media (min-width: 1024px) {
+    .card {
+        background-color: rgb(107, 175, 101);
+        border-radius: 0.25rem;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        color: white;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        min-width: 0;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 1140px;
+    }
+
+    .section-left {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.66667%;
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        .input_section {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                text-align: center;
+            }
+
+            form {
+                .input_inline {
+                    margin: 12px 0;
+                    display: flex;
+                    align-items: center;
+
+                    label {
+                        color: #FFFFFF;
+                        font-weight: bold;
+                        margin-right: 10px;
+                    }
+
+                }
+
+                .input {
+                    margin: 8px 0;
+
+                    label {
+                        color: #FFFFFF;
+                        font-weight: bold;
+                    }
+
+                    input {
+                        display: block;
+                        width: 100%;
+                        padding: 8px;
+                        border-radius: 5px;
+                    }
+                }
+
+                button {
+                    background-color: rgb(44, 88, 40);
+                    color: white;
+                    border: 0;
+                    border-radius: 5px;
+                    display: block;
+                    width: 100%;
+                    padding: 8px;
+                    cursor: pointer;
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .search_section {
+            text-align: center;
+
+            h2 {
+                color: #FFFFFF;
+            }
+
+            form {
+                width: 100%;
+                display: grid;
+                grid-gap: 10px;
+
+                label {
+                    display: flex;
+                    align-items: center;
+                }
+
+                input {
+                    padding: 5px;
+                    border-radius: 5px;
+                }
+
+                button {
+                    background-color: rgb(44, 88, 40);
+                    color: white;
+                    border: 0;
+                    display: block;
+                    width: 100%;
+                    border-radius: 5px;
+                    padding: 8px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .section-right {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
